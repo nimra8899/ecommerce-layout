@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Poppins', sans-serif;
+
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+h5{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h6{
+    color: #D8D8D8;
+}
+hr{
+    background-color: coral;
+    width: 38px;
+    height: 10px;
+}
+a{
+    text-decoration: none;
+}
+.star{
+    padding: 10px 0px;
+}
+.star i{
+    font-size: 0.8rem;
+    color: indianred;
+}
+button{
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    color: aliceblue;
+    background-color:#1d1d1d ;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: coral;
+}
+
+.navbar {
+    font-size: 22px;
+    top: 0;
+    position: absolute;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav{
+    padding: 0 20px;
+    transition: color 0.3s ease;
+    color: indianred;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+    color: coral;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+    
+#home span{
+    color: indianred;
+}
+#home{
+    background-image: url("pics/back.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 60px  center;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+           /*    mobile nav               */
+           .navbar-light .navbar-toggler{
+            border: none;
+            outline: none;
+           }
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    color: black;
+    
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#bar:hover,#bar.active{
+    color: white;
+}
+@media only screen and(max-width:991px){
+    body>nav>div>button:hover,
+    body>nav>div>button:focus{
+        background-color: indianred;
+    }
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar{
+        background-color: indianred;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+#brand{
+    cursor: pointer;
+
+}
+#brand1 img{
+    transition: 0.3s all;
+}
+#brand1:hover img{
+    opacity: 0.5;
+}
+#new .one img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-family: 500;
+    color: black;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+
+}
+#new .one .details button:hover{
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    font-weight: bold;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    font-weight: bold;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    font-weight: bold;
+}
+
+.product{
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+}
+
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.5;
+
+}
+.product .btn{
+    background-color: indianred;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .btn{
+    
+    transform: translateY(0);
+    opacity: 1;
+    
+}
+#banner{
+    background-image: url("pics/banner/2.jpg");
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 70px  center;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+background-repeat: no-repeat;
+background-attachment: fixed;
+justify-content: center;
+align-items: flex-start;
+}
+#banner h4{
+    color: white;;
+}
+#banner h1{
+    color: #D8D8D8;
+}
+#banner button{
+    background-color: indianred;
+}
+footer{
+    background-color: #222222;
+}
+
+footer h5{
+    color:#D8D8D8 ;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color:#999;
+}
+footer li a:hover{
+    color: #D8D8D8;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color:#999;
+}
+footer .copyright a{
+    display: inline-block;
+    border-radius: 50%;
+    width: 38px;
+    color: #000;
+    background-color: #fff;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+footer .copyright a:hover{
+    color: #fff;
+    background-color: coral;
+}
